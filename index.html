@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Abdulle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/dce5591201.js" cross2origin="anonymous"></script>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Content -->
+    <nav id="desktop-nav">
+      <div class="logo-btn"  cursor: pointer;" onclick="window.open('https://www.linkedin.com/in/yabdlle/', '_blank');">LinkedIn Profile </div>
+      <div>
+          <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#skills">Skills</a></li> 
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+  
+    <!-- Side Navigation -->
+    <div class="side-nav">
+        <a href="#home" class="nav-circle"></a>
+        <a href="#skills" class="nav-circle"></a>
+        <a href="#projects" class="nav-circle"></a>
+        <a href="#contact" class="nav-circle"></a>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="section__text">
+            <p class="section__text__p1">Hi I'm</p>
+            <h1 class="title" style="color: white;">Youssef</h1>
+            <p class="section__text__p2">
+                <span id="jobTitle"></span>
+            </p>
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('assets/Youssef_Abdulle.pdf')">Resume</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+        </div>
+        <div class="main_grid">
+            <div class="main_img">
+                <img src="assets/me.png" alt="me"/>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+      <div class="about-container bd-grid">
+        <div class="card">
+          <h3 class="about2-text">About Me</h3>
+          <p class="about-text">
+            Hello, my name is Youssef Abdulle, I am a Junior Computer Science student at the University of Minnesota – 
+            Twin Cities. Driven by a deep enthusiasm for technology, I have hands-on experience with a broad range of developer tools and programming languages. 
+            I am passionate about continually expanding my skill set by learning and applying new technologies.
+            Outside of my studies, I love reading, exploring the outdoors, and lifting weights. 
+            I am eager and excited to embrace opportunities in the tech industry and leverage my technical background to foster my growth. 
+            I look forward to connecting my diverse experiences and skills with the ever-evolving world of technology!
+          </p>
+          <div class="email-container">
+            <p class="email-text">Feel free to reach out by email!</p>
+            <p id="email" class="email-address" style="color: #0080FF;"> youssefabdulle12@gmail.com</p>
+            <i class="fas fa-copy" id="copy-email-icon" title="Copy Email"></i>
+            <div id="copied" class="hidden" >Copied!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="skills-section" id="skills">
+      <h2 class="section-title" style="margin-bottom: 1rem;">Skills</h2>
+      <p class="section-subtext" style="margin-bottom: 3rem;">Here is a brief overview of my technical skills and technologies I'm familiar with!</p>
+    
+      <!-- Skills Cards Row -->
+      <div class="skills-cards-container">
+        <!-- Programming Languages Card -->
+        <div class="skills-card">
+          <h3 class="skills-card-title">Programming Languages</h3>
+          <div class="skills-card-content">
+            <div class="skills-data">
+              <i class="fab fa-python skill-icon"></i>
+              <span class="skills-name">Python</span>
+            </div>
+            <div class="skills-data">
+              <i class="fab fa-java skill-icon"></i>
+              <span class="skills-name">Java</span>
+            </div>
+            <div class="skills-data">
+              <i class="fas fa-c skill-icon"></i>
+              <span class="skills-name">C/C++</span>
+            </div>
+            <div class="skills-data">
+              <i class="fa-solid fa-terminal skill-icon"></i>
+              <span class="skills-name">OCaml</span>
+            </div>
+            <div class="skills-data">
+              <i class="fab fa-js skill-icon"></i>
+              <span class="skills-name">JavaScript</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Full Stack Tools Card -->
+        <div class="skills-card">
+          <h3 class="skills-card-title">Full Stack Tools</h3>
+          <div class="skills-card-content">
+            <div class="skills-data">
+              <i class="fab fa-html5 skill-icon"></i>
+              <span class="skills-name">HTML</span>
+            </div>
+            <div class="skills-data">
+              <i class="fab fa-css3-alt skill-icon"></i>
+              <span class="skills-name">CSS</span>
+            </div>
+            <div class="skills-data">
+              <i class="fab fa-node skill-icon"></i>
+              <span class="skills-name">Node.js</span>
+            </div>
+            <div class="skills-data">
+              <i class="fab fa-react skill-icon"></i>
+              <span class="skills-name">React</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Other Tools Card -->
+  <div class="skills-card">
+    <h3 class="skills-card-title"> Other Tools</h3>
+    <div class="skills-card-content">
+      <div class="skills-data">
+        <i class="fab fa-git-alt skill-icon"></i>
+        <span class="skills-name">Git</span>
+      </div>
+      <div class="skills-data">
+        <i class="fa-regular fa-file-code skill-icon"></i>
+        <span class="skills-name">VSCode</span>
+      </div>
+      <div class="skills-data">
+        <i class="fa-solid fa-code skill-icon"></i>
+        <span class="skills-name">Eclipse</span>
+      </div>
+    </div>
+      </section>
+
+    <section class="project-section" id="projects">
+      <div id="image-overlay" onclick="closeImage()" style="display:none;"></div>
+      <h2 class="section-title" style="margin-bottom: 1rem">Projects</h2>
+      <p class="section-subtext" style="margin-bottom: 3rem;">Here are some personal projects I've worked on to expand my knowledge and automate everyday tasks!</p>
+      
+      <div class="project-container">
+        <!-- HeadStart AI Project -->
+        <div class="project-card">
+          <img src="./assets/ai.png" alt="HeadStart AI" class="project-image" onclick="enlargeImage(this)">
+          <div class="project-info">
+            <p class="project-title">AI Interview Assistant</p>
+            <p class="project-subtitle">
+              Developed a responsive AI-powered interview assistant chatbot with React.js, and Meta Llama API. Led frontend development, integrating complex UI components for context-aware responses. Enhanced performance through rigorous testing and debugging, significantly improving accuracy and reliability.
+            <div class="language-buttons">
+              <a href="#" class="language-button">JavaScript</a>
+              <a href="#" class="language-button">React</a>
+              <a href="#" class="language-button">Meta Llama API</a>
+            </div>
+            <a href="https://github.com/yabdlle/AI-Chatbot" class="github-link" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/test7.png" alt="Movie Tool" class="project-image" onclick="enlargeImage(this)">
+          <div class="project-info">
+            <p class="project-title"> TV Series Recommender </p>
+            <p class="project-subtitle">
+              Engineered a TV series recommender system using Python, scikit-learn, and pandas. Analyzed user ratings to uncover preferences and generate personalized suggestions. Implemented a ranking mechanism using cosine similarity and engagement metrics to deliver tailored, relevant recommendations for users.
+            <div class="language-buttons">
+              <a href="#" class="language-button">Python</a>
+              <a href="#" class="language-button">scikit-learn</a>
+              <a href="#" class="language-button">NumPy</a>
+              <a href="#" class="language-button">pandas</a>
+  
+              
+            </div  class="github-link">
+            <a href="https://github.com/yabdlle/anime-recommender" class="github-link" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+
+        <div class="project-card">
+          <img src="./assets/test.png " alt="Internship Aggregator Tool" class="project-image" onclick="enlargeImage(this)">
+          <div class="project-info">
+            <p class="project-title"> Internship Aggregator  </p>
+            <p class="project-subtitle">
+              Built a web scraping tool using BeautifulSoup and pandas 
+              to collect detailed internship data, such as company, role, location,
+               and posting date, organized pandas display. Integrated with a Discord bot
+                for real-time updates on new postings, offering interactive commands for
+                 filtering and exploring new opportunities.
+
+            </p>
+            <div class="language-buttons">
+              <a href="#" class="language-button">Python</a>
+              <a href="#" class="language-button">BeautifulSoup</a>
+              <a href="#" class="language-button">pandas</a>
+    
+            </div>
+            <a href="https://github.com/yabdlle/job-bot" class="github-link" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+  
+    
+        <div class="project-card">
+          <img src="./assets/food.jpg" alt="Recipe Website" class="project-image" onclick="enlargeImage(this)">
+          <div class="project-info">
+            <p class="project-title">Recipe Recommender </p>
+            <p class="project-subtitle">
+              Developing a full stack recipe website using Node.js, JavaScript, and React.js,
+               featuring a sleek interface for browsing and searching recipes. 
+               Implementing advanced filtering options based on ingredients and cuisine,
+                and including functionalities for users to save favorite recipes,
+                 add personalized notes, and share them with others.
+            <div class="language-buttons">
+              <a href="#" class="language-button">JavaScript</a>
+              <a href="#" class="language-button">Node.js</a>
+              <a href="#" class="language-button">React.js</a>
+
+            </div>
+            <a href="https://github.com/yabdlle/recipe-app" class="github-link" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    
+
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h3 class="section-title">Connect with Me!</h3>
+        <p style="margin-bottom: 30px;" class="section-subtext">Feel free to reach out for any questions, opportunities, or just to have a coffee chat!</p>
+        <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
+          <div class="form-container">
+            <input type="hidden" name="access_key" value="6c0c1fc1-7711-46aa-94c6-b955a86ec63d">
+            <input type="text" id="name" name="name" required class="form-input" placeholder="Your Name">
+          </div>
+          <div class="form-container">
+            <input type="email" id="email" name="email" required class="form-input" placeholder="Your Email">
+          </div>
+          <div class="form-container">
+            <input type="text" id="subject" name="subject" required class="form-input" placeholder="Your Subject">
+          </div>
+          <div class="form-container">
+            <textarea id="message" name="message" rows="5" required class="form-textarea" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>  Send
+          </button>
+        </form>
+      </div>
+    </section>
+    
+
+    <footer class="footer-class">
+      <div class="footer-content">
+          <div class="footer-title">Youssef Abdulle</div>
+          <div class="footer-nav">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-social">
+              <a href="https://github.com/yabdlle" class="footer-icon" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/yabdlle" class="footer-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto: youssefabdulle12@gmail.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
+          </div>
+      <div class="footer-bottom">
+          <p>© 2024 Youssef Abdulle. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>

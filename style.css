@@ -1,0 +1,914 @@
+/* GENERAL BEHAVIOR */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A0A0A;
+  padding: 0;
+  margin: 0;
+}
+
+
+p {
+  color: white;
+}
+.wave-emoji {
+  display: inline-block;
+  animation: wave 1s infinite; /* Adjust duration as needed */
+}
+
+@keyframes wave {
+  0%, 100% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(20deg);
+  }
+}
+
+/* Transition */
+a, .btn {
+  transition: all 300ms ease;
+}
+
+.logo {
+  font-size: 1.25rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #fff; /* White for default state */
+  margin-right: 20px;
+  font-size: 28px; /* Larger icon size for aesthetics */
+  padding: 10px; /* Add padding for rounded effect */
+  border-radius: 50%; /* Circular icons */
+  background-color: #333; /* Icon background color */
+  transition: color 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0080FF; /* Theme color on hover */
+  background-color: #222; /* Darker hover background */
+  transform: scale(1.2); /* Slight scaling effect on hover */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: linear-gradient(135deg, #0080FF, #0057D6); /* Gradient background using theme colors */
+  color: #ffffff; /* Text color on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+  border-radius: 20px; /* Keep the roundness consistent */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+
+/* Navi bars and links */
+nav, .nav-links {
+  display: flex;
+  font-size: 1.25rem;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  font-size: 16px; /* Already defined */
+}
+
+
+.nav-links {
+  gap: 1.5rem;
+  list-style: none;
+}
+
+
+.logo:hover {
+  cursor: default;
+  color: #0080FF;
+}
+
+
+/* Side Bar */
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  color: white;
+  background-color: black;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+
+/* Side Navigation */
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.nav-circle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-color: #ccc; 
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  outline: none;
+}
+
+#id{
+  margin-bottom: 2rem;
+}
+.nav-circle:hover {
+  background-color: #0080FF; /* Highlight color on hover */
+}
+
+/* Style for the active section indicator with a border */
+.nav-circle.active {
+  background-color: #0080FF; /* Active section color */
+  position: relative; /* For pseudo-element positioning */
+}
+
+.nav-circle.active::after {
+  position: absolute;
+  top: -5px; 
+  left: -5px; 
+  width: 30px; 
+  height: 30px; 
+  border: 2px solid #2fcff4; 
+  border-radius: 50%;
+  box-sizing: border-box; /* To include the border in the width and height */
+  z-index: -1;
+}
+
+section {
+  padding-top: 4vh; 
+  padding-bottom: 4vh; /* Added for bottom padding */
+  margin: 0 10%;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section_container {
+  display: flex;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 96vh;
+  margin-top: -20%;
+}
+
+.section__pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+  position: relative;           
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.main_grid {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;  
+   
+}
+
+.main_img {
+  display: flex;
+  justify-content: center;  
+}
+
+.main_img img {
+  max-width: 100%;  /* Ensure the photo does not exceed container width */
+  height: auto;     /* Maintain aspect ratio */
+}
+
+.main_img img {
+  margin-top: 50px; 
+  width: 250px; 
+  height: 250px; 
+  border-radius: 50%; /* Make the image a circle */
+  object-fit: cover; 
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 375px; 
+  border: 3px solid #333;
+  margin-bottom: 100px; 
+  animation: bounce 3.5s infinite alternate ease-in-out; /* Animation */
+  transition: transform 1s ease; /* Smooth transition for transformation */
+}
+
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* BUTTONS */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  color: white;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  background: #0A0A0A;
+  border: gray 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  background: linear-gradient(135deg, #0080FF, #0057D6); 
+  color: #ffffff;
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+  border: 2px solid transparent; 
+}
+
+.logo-btn {
+  background: #0A0A0A; /* Match btn-color-1 and 2 background */
+  border: gray 0.1rem solid; /* Match border style */
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 12rem; 
+  border-radius: 2rem; /* More rounded corners */
+  color: white; 
+  font-size: 14px; 
+  text-align: center; 
+  display: inline-block; /* Ensure it respects padding and width */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.logo-btn:hover {
+  background: linear-gradient(135deg, #0075e6, #004cb3); /* Slightly softened blue tones */
+  color: #f0f8ff; /* Lighter text color for contrast */
+  transform: scale(1.08); /* Subtle enlargement */
+  box-shadow: 0 10px 20px rgba(0, 128, 255, 0.4), 0 6px 10px rgba(0, 0, 0, 0.3); /* Dual shadow for more depth */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Stronger text shadow */
+  border: 2px solid rgba(0, 64, 128, 0.4); /* Semi-transparent border to complement gradient */
+  border-radius: 8px; /* Slight rounding for a softer feel */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+.about-text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.about2-text {
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  color: #0080FF; 
+  text-align: center; 
+  margin-bottom: 0.5rem; 
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: #0A0A0A;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: -140px; 
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); 
+}
+.about-text {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-email {
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact-email span {
+  color: #0080FF;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+/* Skills Section */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.skills-subtext {
+    margin-bottom: 3rem;
+}
+
+/* Skills Cards Row */
+.skills-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 20px; 
+}
+
+
+.skills-card {
+  margin-bottom: -4rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+}
+
+
+.skills-card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0080FF;
+    margin-bottom: 1.5rem;
+}
+
+.skills-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skills-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.skills-name {
+    font-size: 1rem;
+    color: #0080FF;
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 4rem 1rem; 
+  margin-bottom: 2rem; 
+}
+.section-title {
+  margin-bottom: var(--mb-4); /* Margin bottom */
+  font-size: 42px; 
+  text-align: center; /* Center align the section title */
+  color: #0080FF;
+}
+
+.section-subtext {
+  text-align: center; /* Center align the subtext */
+  font-size: 1.25rem; /* Larger font size for readability */
+}
+
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns, each taking equal space */
+  gap: 2rem; /* Space between grid items */
+  max-width: 1300px; /* Max-width for the grid container */
+  margin: 0 auto; /* Center the grid container */
+  padding: 1rem; /* Padding around the grid container */
+}
+
+
+/* Card Styling */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #0A0A0A;
+  border-radius: 12px;
+  max-width: 1200px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-origin: center center; 
+}
+
+
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.03); /* Scale up the image by 10% */
+}
+
+/* Project Info */
+.project-info {
+  padding: 1rem; /* Padding inside the card */
+}
+
+.project-title {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 24px; 
+  font-weight: bold;
+  text-align: center; 
+  margin: 0;
+  color: #0080FF; 
+}
+
+.project-subtitle {
+  margin: 1rem 0; 
+  text-align: center; 
+  font-size: 16px; 
+  color: #ccc; 
+}
+
+/* Language Buttons */
+.language-buttons {
+  margin: 1rem 0; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+  gap: 0.5rem; 
+  pointer-events: none;
+  
+}
+
+.language-buttons .language-button {
+  background-color: #0A0A0A; 
+  color: #0080FF;
+  padding: 0.25rem 0.75rem; 
+  border-radius: 12px; 
+  text-decoration: none; 
+  font-size: 14px; 
+  display: inline-block; 
+  border: 2px solid #0080FF;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Consistent transition for hover effect */
+}
+
+.language-buttons .language-button:hover {
+  transform: scale(1.05); 
+  background-color: #0080FF; 
+  color: white; 
+}
+
+/* GitHub Link */
+.github-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #0080FF;
+  font-size: 20.8px;
+  background-color: #0A0A0A;
+  border: 2px solid #0080FF;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.github-link:hover {
+  background-color: #0080FF;
+  color: white;
+  border-color: #0080FF;
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 20px rgba(0, 128, 255, 0.6); /* Add shadow effect */
+  border-radius: 8px; /* Smoothly increase border-radius */
+}
+
+.github-link i {
+  margin-right: 0.5rem;
+}
+
+
+/* Style for full-screen overlay */
+#image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 1000;
+}
+
+.fullscreen-image {
+  border-radius: 12px;
+  object-fit: contain;
+  max-width: 50%; 
+  max-height: 50%; 
+  cursor: pointer; 
+}
+
+/* Contact section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #0A0A0A;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  display: inline-block;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #0080FF;
+}
+
+/* Contact section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #0A0A0A;
+}
+
+.contact-container {
+  max-width: 800px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  display: inline-block;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #0080FF;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #0A0A0A;
+  padding: 40px; 
+  border-radius: 12px; 
+  box-shadow: 0 0 30px rgba(0, 128, 255, 0.8); 
+  margin: 0 auto; 
+}
+
+.form-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #0080FF;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 15px; 
+  border: 1px solid #333;
+  border-radius: 6px; 
+  font-size: 1.1em; 
+  background: #0A0A0A;
+  color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #0080FF;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%; 
+  padding: 14px 24px;
+  border: none;
+  border-radius: 50%; 
+  background-color: #0080FF; 
+  color: white; 
+  font-size: 1.2rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  text-align: center; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 128, 255, 0.2); 
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #0080FF, #0057D6); /* Gradient background using theme colors */
+  color: #ffffff; /* Text color on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+  border: 2px solid transparent; /* Transparent border to enhance gradient effect */
+}
+
+.sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mb-4); 
+}
+
+.contact-container {
+  margin-bottom: 40px;
+}
+
+.contact-section h2 {
+  position: relative;
+  top: -20px; 
+  margin-bottom: 20px; 
+}
+
+/* Form label and input styling */
+.form-label {
+  display: block;
+  margin-bottom: 10px; 
+  font-weight: bold;
+  color: #333;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Soft gradient background */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px; 
+  cursor: pointer;
+  font-size: 1.2rem; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; 
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004494); 
+  transform: translateY(-4px) scale(1.02); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+  filter: brightness(1.05); 
+}
+
+.submit-btn:active {
+  background: linear-gradient(135deg, #003d7a, #002a5d);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px) scale(0.98); 
+}
+
+.submit-btn i {
+  font-size: 24px;
+  transition: color 0.3s ease; 
+}
+
+.submit-btn:hover i {
+  color: #ffffff; 
+}
+
+
+.footer-class {
+  background-color: #0062CC; 
+  color: white; 
+  padding: 20px 30px; 
+  text-align: center; 
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.footer-title {
+  font-size: 20px; 
+  font-weight: bold;
+  color: white; 
+  margin-bottom: 10px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  font-family: "Poppins", sans-serif; 
+}
+
+.footer-nav {
+  margin-bottom: 12px; 
+}
+
+.footer-nav ul {
+  list-style: none; 
+  padding: 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin: 0 8px; 
+}
+
+.footer-nav ul li a {
+  color: white; 
+  text-decoration: none; 
+  font-size: 19.2px; 
+}
+
+.footer-nav ul li a:hover {
+  transform: scale(1.1); /* Grows slightly */
+  color: #0080FF; /* Slightly lighter color on hover */
+}
+
+.footer-social {
+  margin-bottom: 15px; 
+}
+
+.footer-icon {
+  color: white;
+  font-size: 24px;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer-icon:hover {
+  transform: scale(1.1); /* Grows slightly */
+  color: #0080FF; /* Slightly lighter color on hover */
+}
+
+
+.footer-bottom {
+  font-size: 14px; 
+  color: white; 
+}
+
+
+#copy-email-icon {
+  cursor: pointer;
+  font-size: 1.2rem; 
+  color: #0080FF; 
+  margin-left: 10px;
+}
+
+#copied {
+  display: none; 
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#copied.active {
+  display: inline; 
+}
+
+
+.highlight-email {
+  background-color: #0A0A0A;
+}

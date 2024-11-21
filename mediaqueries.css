@@ -1,0 +1,162 @@
+/* General Mobile Styles */
+@media screen and (max-width: 600px) {
+  #desktop-nav {
+    display: none;
+  }
+  
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socials-container {
+    display: flex; /* Show social icons */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
+    margin-top: 0.5rem; /* Space between menu and social icons */
+  }
+
+  /* Additional styling if needed for social icons */
+  .social-icon {
+    margin: 0.5rem 0; /* Space between social icons */
+  }
+  
+  .social-icon i {
+    color: #0080FF; /* Ensure the icons are white */
+    cursor: pointer;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: initial;
+  }
+  .fullscreen-image {
+    max-width: 80%; /* Increase size on mobile */
+    max-height: 80%; /* Increase size on mobile */
+  }
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+
+  .skills-data {
+    flex: 1 1 calc(50% - 1rem); /* Two items per row on tablets */
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-cards-container {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 10px; /* Adjust spacing between cards */
+  }
+
+  .skills-card {
+      flex: 1 1 100%; /* Each card takes full width of the container */
+      box-sizing: border-box;
+  }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 480px) {
+  .skills-data {
+    flex: 1 1 calc(100% - 1rem); /* One item per row on mobile */
+    max-width: calc(100% - 1rem);
+  }
+  @media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .section-subtext {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .project-container {
+    grid-template-columns: 1fr; /* Single column layout on mobile */
+  }
+
+  .project-img {
+    height: auto; /* Allow cards to grow with content */
+  }
+  
+  .project-title {
+    font-size: 1.25rem; /* Smaller font size for mobile */
+  }
+
+  .project-description, .project-languages {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    margin: 0 0.5rem; /* Less margin for mobile */
+  }
+
+  .github-link {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .github-link i {
+    font-size: 1.2rem; /* Smaller icon size for mobile */
+  }
+  .project-description{
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtext {
+    font-size: 1rem; 
+  }
+
+  .project-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .project-img {
+    height: auto; /* Allow cards to grow with content */
+  }
+  
+  .project-title {
+    color: #0080FF;
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .project-description, .project-languages {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    margin: 0 0.5rem; /* Less margin for mobile */
+  }
+
+  .github-link {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .github-link i {
+    font-size: 1.2rem; /* Smaller icon size for mobile */
+  }
+  
+}
+}
