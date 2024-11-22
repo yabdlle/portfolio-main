@@ -11,7 +11,7 @@ function toggleMenu() {
 
 
 const colors = ["#0080FF","#0080FF", "#0080FF"];
-const messageArr = ["UMN Student", "Software Engineer", "Fullstack Developer"];
+const messageArr = ["UMN Student", "Software Engineer", "Backend Developer"];
 
 var currentMessage = 0;
 var textPosition = 0;
