@@ -431,7 +431,7 @@ section {
   padding: 2rem;
   background-color: #000;
   color: #fff;
-  flex: 1 1 calc(33.333% - 20px);
+  flex: 1 1 calc(50% - 20px); /* Adjust to 50% width */
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -462,7 +462,7 @@ section {
     align-items: center;
     padding: 2rem;
     color: #fff;
-    width: 100px;
+    width: 120px;
     border-radius: 5px;
 }
 
