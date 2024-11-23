@@ -89,8 +89,9 @@
         <div class="timeline-bar"></div> <!-- Left Timeline Bar -->
         <div class="timeline-content">
           <div class="timeline-image">
-            <img src="./assets/atlassian.svg" alt="Atlassian" class="skills-icon" />
+            <img src="./assets/atlassian.svg" alt="Atlassian" class="skills-icon" style="filter: brightness(0) saturate(100%) invert(100%);" />
           </div>
+          
           <div class="timeline-text">
             <h3 class="timeline-title">Software Engineer Intern</h3>
             <p class="timeline-company">Atlassian</p>
@@ -142,9 +143,15 @@
               <span class="skills-name">Java</span>
             </div>
             <div class="skills-data">
-              <img id="cpp-icon" class="skills-icon" src="./assets/c.svg" alt="C" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="2rem" height="2rem">
+                <!-- Background or Blue part -->
+                <circle cx="50" cy="50" r="45" fill="blue" />
+                <!-- "C" text that you want to make white -->
+                <text x="50" y="55" font-size="50" text-anchor="middle" fill="white">C</text>
+              </svg>
               <span class="skills-name">C/C++</span>
             </div>
+            
             <div class="skills-data">
               <img id="ocaml-icon" class="skills-icon" src="./assets/ocaml.svg" alt="OCaml" />
               <span class="skills-name">OCaml</span>
