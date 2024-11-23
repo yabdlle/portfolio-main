@@ -372,7 +372,7 @@ section {
   margin: 20px auto;
   margin-top: -140px; 
   text-align: center;
-  border: 1px solid rgba(0, 128, 255, 0.3);
+  box-shadow: 0 0 5px rgba(0, 128, 255, 0.3);
 }
 
 .about-text {
@@ -605,7 +605,7 @@ section {
   background-color: #0A0A0A;
   border-radius: 12px;
   max-width: 1200px;
-  border: 1px solid rgba(0, 128, 255, 0.3);
+  box-shadow: 0 0 5px rgba(0, 128, 255, 0.3);
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transform-origin: center center; 
@@ -776,7 +776,7 @@ section {
   background: #0A0A0A;
   padding: 40px; 
   border-radius: 12px; 
-  box-shadow: 0 0 30px rgba(0, 128, 255, 0.8); 
+  box-shadow: 0 0 8px rgba(0, 128, 255, 0.5);
   margin: 0 auto; 
 }
 
