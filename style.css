@@ -392,76 +392,134 @@ section {
   font-size: 1rem;
 }
 
+/* Skills Section */
 .skills-section {
   padding: 4rem 1rem; 
   margin-top: -3rem; 
   margin-bottom: 3rem; 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  text-align: center; /* Ensure all text is centered */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the section itself */
 }
 
+/* Skills Subtext */
 .skills-subtext {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
+  text-align: center; /* Center the subtext */
 }
 
-/* Skills Cards Row */
+/* Skills Cards Container */
 .skills-cards-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
-  gap: 20px; 
-
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Space between the cards */
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Prevent overflow */
+  margin: 0 auto; /* Center the container */
 }
 
+/* Individual Skills Card */
+.skills-card {
+  margin-bottom: 2rem;
+  border: 2px solid rgba(0, 128, 255, 0.3);
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #0A0A0A;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content inside the card */
+  justify-content: center; /* Center content vertically inside the card */
+  flex: 1 1 calc(33.333% - 20px); /* 3 items per row */
+  max-width: calc(33.333% - 20px);
+  box-shadow: 0 0 5px rgba(0, 128, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Skills Card Title */
+.skills-card-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0080FF;
+  margin-bottom: 1.5rem;
+}
+
+/* Skills Card Content */
+.skills-card-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Skills Data */
 .skills-data {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  justify-content: center;
+  padding: 1rem;
   color: #fff;
   width: 120px;
   border-radius: 5px;
-  text-align: center;
+  text-align: center; /* Center the text */
+  box-sizing: border-box;
+  margin: 0 auto; /* Center the content */
 }
 
+/* Skill Icon */
 .skill-icon, .skills-icon {
   width: 2rem;
   font-size: 2rem;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; /* Centers the icon horizontally */
 }
-
+/* Skills Name */
 .skills-name {
   font-size: 1rem;
   color: #0080FF;
   font-weight: bold;
   margin-top: 0.5rem;
-  text-align: center;
+  text-align: center; /* Ensure text is centered below icon */
 }
 
 .section-title {
   margin-bottom: 1rem;
   font-size: 42px; 
-  text-align: center;
+  text-align: center; /* Center align the section title */
   color: #0080FF;
 }
 
 .section-subtext {
   margin-bottom: 2rem;
-  text-align: center;
-  font-size: 1.25rem;
+  text-align: center; /* Center align the subtext */
+  font-size: 1.25rem; /* Larger font size for readability */
 }
 
+/* Experience Section */
 .experience-section {
   padding: 4rem 1rem;
-  background-color: #0A0A0A;
+  background-color: #0A0A0A; /* Black background */
 }
 
+/* Timeline Section */
 .timeline-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 40px; /* Space between each timeline item */
   padding: 2rem 0;
   width: 100%;
   max-width: 1000px;
@@ -474,8 +532,8 @@ section {
   padding: 2rem;
   background-color: #0A0A0A;
   border-radius: 8px;
-  border: 2px solid rgba(0, 128, 255, 0.2); 
-  box-shadow: 0 0 5px rgba(0, 128, 255, 0.2); 
+  border: 2px solid rgba(0, 128, 255, 0.2); /* Slightly more subtle blue border */
+  box-shadow: 0 0 5px rgba(0, 128, 255, 0.2); /* Slightly more subtle blue box-shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
 }
@@ -484,16 +542,19 @@ section {
   transform: translateY(-5px);
 }
 
+
+
 .timeline-bar {
   position: absolute;
   left: -20px;
   top: 0;
   bottom: 0;
   width: 6px;
-  background-color: #0080FF; 
+  background-color: #0080FF; /* Blue timeline bar */
   border-radius: 3px;
 }
 
+/* Timeline Content */
 .timeline-content {
   display: flex;
   align-items: center;
@@ -501,21 +562,20 @@ section {
 }
 
 .timeline-image {
-  width: 70px;
-  height: 70px;
-  margin-right: 20px;
+  width: 70px; /* Adjust width of the image */
+  height: 70px; /* Adjust height of the image */
+  margin-right: 20px; /* Space between image and text */
 }
 
 .timeline-image img {
-  width: 100%;
+  width: 100%; /* Ensure the image fits inside the div */
   height: 100%;
   object-fit: contain;
 }
 
 .timeline-text {
-  flex: 1;
+  flex: 1; /* Ensures that the text content takes the remaining space */
 }
-
 
 .timeline-title {
   font-size: 22px;
@@ -532,7 +592,7 @@ section {
 
 .timeline-date {
   font-size: 16px;
-  color: #0080FF;
+  color: #ccc;
   margin-bottom: 12px;
 }
 
@@ -547,15 +607,18 @@ section {
   margin-bottom: 8px;
 }
 
+
 .project-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 1rem;
+  grid-template-columns: repeat(2, 1fr); /* Two columns, each taking equal space */
+  gap: 2rem; /* Space between grid items */
+  max-width: 1300px; /* Max-width for the grid container */
+  margin: 0 auto; /* Center the grid container */
+  padding: 1rem; /* Padding around the grid container */
 }
 
+
+/* Card Styling */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -570,22 +633,25 @@ section {
   transform-origin: center center; 
 }
 
+
+
+/* Project Image */
 .project-image {
   width: 100%;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
 }
 
 .project-card:hover .project-image {
-  transform: scale(1.03);
+  transform: scale(1.03); /* Scale up the image by 10% */
 }
 
+/* Project Info */
 .project-info {
-  padding: 1rem;
+  padding: 1rem; /* Padding inside the card */
 }
-
 
 .project-title {
   justify-content: center;
