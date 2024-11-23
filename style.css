@@ -605,8 +605,8 @@ section {
   background-color: #0A0A0A;
   border-radius: 12px;
   max-width: 1200px;
+  border: 1px solid rgba(0, 128, 255, 0.3);
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 128, 255, 0.4);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transform-origin: center center; 
 }
