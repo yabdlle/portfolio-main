@@ -412,25 +412,24 @@ section {
   flex-wrap: wrap;
   margin-top: 2rem;
   gap: 20px; 
-}
 
+}
 
 .skills-card {
   margin-bottom: -4rem;
-  border: 2px solid white;
+  border: 2px solid rgba(0, 128, 255, 0.3);
   border-radius: 8px;
   padding: 2rem;
   width: 48%;
   background-color: #000;
   color: #fff;
   flex: 1 1 calc(50% - 20px); /* Adjust to 50% width */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 5px rgba(0, 128, 255, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
 }
 
 
@@ -503,23 +502,22 @@ section {
   margin: 0 auto;
 }
 
-/* Timeline Item */
 .timeline-item {
   display: flex;
   position: relative;
   padding: 2rem;
   background-color: #000;
   border-radius: 8px;
-  border: 2px solid #fff;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(0, 128, 255, 0.3); /* Blue border matching box-shadow */
+  box-shadow: 0 0 5px rgba(0, 128, 255, 0.3); /* Blue box-shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
 }
 
 .timeline-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
 }
+
 
 /* Timeline Bar */
 .timeline-bar {
