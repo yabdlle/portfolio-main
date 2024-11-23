@@ -458,26 +458,32 @@ section {
 }
 
 .skills-data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    color: #fff;
-    width: 120px;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  width: 120px;
+  border-radius: 5px;
+  text-align: center; /* Ensure the text inside is centered */
 }
 
-.skill-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: white;
+.skill-icon, .skills-icon {
+  width: 2rem;
+  font-size: 2rem;
+  color: var(--first-color);
+  display: block;
+  margin: 0 auto; /* Centers the icon horizontally */
 }
 
 .skills-name {
-    font-size: 1rem;
-    color: #0080FF;
-    font-weight: bold;
+  font-size: 1rem;
+  color: #0080FF;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align: center; /* Ensures text is centered below icon */
 }
+
 
 /* Skills Section */
 .skills-section {
