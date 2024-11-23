@@ -420,6 +420,7 @@ section {
   border: 2px solid white;
   border-radius: 8px;
   padding: 2rem;
+  width: 48%;
   background-color: #000;
   color: #fff;
   flex: 1 1 calc(50% - 20px); /* Adjust to 50% width */
@@ -431,7 +432,6 @@ section {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
 }
-
 
 .skills-card-title {
     text-align: center;
@@ -471,13 +471,6 @@ section {
   font-weight: bold;
   margin-top: 0.5rem;
   text-align: center; /* Ensures text is centered below icon */
-}
-
-
-/* Skills Section */
-.skills-section {
-  padding: 4rem 1rem; 
-  margin-bottom: 3rem; 
 }
 .section-title {
   margin-bottom: 1rem;
@@ -590,8 +583,6 @@ section {
 .timeline-description li {
   margin-bottom: 8px;
 }
-
-
 
 
 .project-container {
