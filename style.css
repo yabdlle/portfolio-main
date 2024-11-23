@@ -25,7 +25,6 @@ p {
   color: white;
 }
 
-/* Transition */
 a, .btn {
   transition: all 300ms ease;
 }
@@ -33,14 +32,14 @@ a, .btn {
 .section-title {
   margin-bottom: 1rem;
   font-size: 42px; 
-  text-align: center; /* Center align the section title */
+  text-align: center;
   color: #0080FF;
 }
 
 .section-subtext {
   margin-bottom: 2rem;
-  text-align: center; /* Center align the subtext */
-  font-size: 1.25rem; /* Larger font size for readability */
+  text-align: center; 
+  font-size: 1.25rem; 
 }
 
 .nav-links a {
@@ -54,18 +53,16 @@ a, .btn {
 }
 
 .nav-links a:hover {
-  background: linear-gradient(135deg, #0075e6, #004cb3); /* Slightly softened blue tones */
-  color: #f0f8ff; /* Lighter text color for contrast */
-  transform: scale(1.08); /* Subtle enlargement */
-  box-shadow: 0 10px 20px rgba(0, 128, 255, 0.4), 0 6px 10px rgba(0, 0, 0, 0.3); /* Dual shadow for more depth */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Stronger text shadow */
-  border: 2px solid rgba(0, 64, 128, 0.4); /* Semi-transparent border to complement gradient */
-  border-radius: 8px; /* Slight rounding for a softer feel */
-  transition: all 0.3s ease; /* Smooth transition */
+  background: linear-gradient(135deg, #0075e6, #004cb3); 
+  color: #f0f8ff; 
+  transform: scale(1.08); 
+  box-shadow: 0 10px 20px rgba(0, 128, 255, 0.4), 0 6px 10px rgba(0, 0, 0, 0.3); 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+  border: 2px solid rgba(0, 64, 128, 0.4); 
+  border-radius: 8px; 
+  transition: all 0.3s ease; 
 }
 
-
-/* Navi bars and links */
 nav, .nav-links {
   display: flex;
   font-size: 1.25rem;
@@ -75,15 +72,13 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  font-size: 16px; /* Already defined */
+  font-size: 16px; 
 }
-
 
 .nav-links {
   gap: 1.5rem;
   list-style: none;
 }
-
 
 /* Side Navigation */
 .side-nav {
@@ -102,20 +97,20 @@ nav {
   width: 20px;
   height: 20px;
   margin-bottom: 10px;
-  background-color: #ccc; 
+  background-color: #FFFFFF;
   border-radius: 50%;
   transition: background-color 0.3s;
   outline: none;
 }
 
 .nav-circle:hover {
-  background-color: #0080FF; /* Highlight color on hover */
+  background-color: #D3D3D3;
 }
 
-/* Style for the active section indicator with a border */
+
 .nav-circle.active {
-  background-color: #0080FF; /* Active section color */
-  position: relative; /* For pseudo-element positioning */
+  background-color: #0080FF; 
+  position: relative; 
 }
 
 .nav-circle.active::after {
@@ -126,13 +121,13 @@ nav {
   height: 30px; 
   border: 2px solid #2fcff4; 
   border-radius: 50%;
-  box-sizing: border-box; /* To include the border in the width and height */
+  box-sizing: border-box; 
   z-index: -1;
 }
 
 section {
   padding-top: 4vh; 
-  padding-bottom: 4vh; /* Added for bottom padding */
+  padding-bottom: 4vh;
   margin: 0 10%;
   box-sizing: border-box;
   min-height: fit-content;
@@ -329,7 +324,6 @@ section {
   text-align: center; 
 }
 
-
 .skills-cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -363,7 +357,6 @@ section {
   color: #0080FF;
   margin-bottom: 1.5rem;
 }
-
 
 .skills-card-content {
   display: flex;
@@ -402,7 +395,6 @@ section {
 }
 
 /* Experience Section */
-
 .experience-section {
   padding: 4rem 1rem;
   background-color: #0A0A0A; 
@@ -520,6 +512,10 @@ section {
   transform-origin: center center; 
 }
 
+.project-section {
+  margin-top: -4rem; /* Reduce the top margin */
+}
+
 .project-image {
   width: 100%;
   height: auto;
@@ -531,7 +527,6 @@ section {
 .project-card:hover .project-image {
   transform: scale(1.03); 
 }
-
 
 .project-info {
   padding: 1rem; 
@@ -555,7 +550,6 @@ section {
   color: #ccc; 
 }
 
-
 .language-buttons {
   margin: 1rem 0; 
   display: flex; 
@@ -564,7 +558,6 @@ section {
   align-items: center;
   gap: 0.5rem; 
   pointer-events: none;
-  
 }
 
 .language-buttons .language-button {
@@ -613,7 +606,6 @@ section {
   margin-right: 0.5rem;
 }
 
-
 #image-overlay {
   position: fixed;
   top: 0;
@@ -634,7 +626,6 @@ section {
   max-height: 50%; 
   cursor: pointer; 
 }
-
 
 .contact-section {
   padding: 60px 20px;
@@ -755,7 +746,6 @@ section {
   margin-bottom: 20px; 
 }
 
-
 .form-label {
   display: block;
   margin-bottom: 10px; 
@@ -807,7 +797,6 @@ section {
 .submit-btn:hover i {
   color: #ffffff; 
 }
-
 
 .footer-class {
   background-color: #0062CC; 
@@ -876,12 +865,10 @@ section {
   color: #0080FF; 
 }
 
-
 .footer-bottom {
   font-size: 14px; 
   color: white; 
 }
-
 
 #copy-email-icon {
   cursor: pointer;
@@ -900,7 +887,6 @@ section {
 #copied.active {
   display: inline; 
 }
-
 
 .highlight-email {
   background-color: #0A0A0A;
