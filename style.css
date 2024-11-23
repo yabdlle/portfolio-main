@@ -392,7 +392,6 @@ section {
   font-size: 1rem;
 }
 
-
 .skills-section {
   padding: 4rem 1rem; 
   margin-top: -3rem; 
@@ -508,8 +507,8 @@ section {
   padding: 2rem;
   background-color: #0A0A0A;
   border-radius: 8px;
-  border: 2px solid rgba(0, 128, 255, 0.3); /* Blue border matching box-shadow */
-  box-shadow: 0 0 5px rgba(0, 128, 255, 0.3); /* Blue box-shadow */
+  border: 2px solid rgba(0, 128, 255, 0.2); /* Slightly more subtle blue border */
+  box-shadow: 0 0 5px rgba(0, 128, 255, 0.2); /* Slightly more subtle blue box-shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
 }
