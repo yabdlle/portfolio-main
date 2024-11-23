@@ -13,27 +13,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  
+  
     <!-- Content -->
     <nav id="desktop-nav">
-      <div class="logo-btn"  cursor: pointer;" onclick="window.open('https://www.linkedin.com/in/yabdlle/', '_blank');">LinkedIn Profile </div>
+      <div class="logo-btn" style="cursor: pointer;" onclick="window.open('https://www.linkedin.com/in/yabdlle/', '_blank');">LinkedIn Profile</div>
       <div>
           <ul class="nav-links">
               <li><a href="#home">Home</a></li>
+              <li><a href="#experience">Experience</a></li> <!-- Experience second -->
               <li><a href="#skills">Skills</a></li> 
-              <li><a href="#projects">Projects</a></li>
+              <li><a href="#projects">Projects</a></li> 
               <li><a href="#contact">Contact</a></li>
           </ul>
       </div>
-  </nav>
-  
+    </nav>
+
     <!-- Side Navigation -->
     <div class="side-nav">
-        <a href="#home" class="nav-circle"></a>
-        <a href="#skills" class="nav-circle"></a>
-        <a href="#projects" class="nav-circle"></a>
-        <a href="#contact" class="nav-circle"></a>
+      <a href="#home" class="nav-circle"></a>
+      <a href="#experience" class="nav-circle"></a> <!-- Experience second -->
+      <a href="#skills" class="nav-circle"></a>
+      <a href="#projects" class="nav-circle"></a>
+      <a href="#contact" class="nav-circle"></a>
     </div>
+
 
     <!-- Home Section -->
     <section id="home">
@@ -60,18 +64,59 @@
         <div class="card">
           <h3 class="about2-text">About Me</h3>
           <p class="about-text">
-            Hello, my name is Youssef Abdulle, I am a Junior Computer Science student at the University of Minnesota – 
-            Twin Cities. Driven by a deep enthusiasm for technology, I have hands-on experience with a broad range of developer tools and programming languages. 
-            I am passionate about continually expanding my skill set by learning and applying new technologies.
-            Outside of my studies, I love reading, exploring the outdoors, and lifting weights. 
-            I am eager and excited to embrace opportunities in the tech industry and leverage my technical background to foster my growth. 
-            I look forward to connecting my diverse experiences and skills with the ever-evolving world of technology!
+            Hello, I’m Youssef Abdulle, a Junior Computer Science student at the University of Minnesota, graduating in May 2026. With hands-on experience as a Software Engineering Intern at Atlassian and as an Undergraduate TA at UMN, I am eager to apply my skills to make a meaningful impact in the tech industry while continuing to grow and develop professionally.
           </p>
-          <div class="email-container">
+       
+          <div class="email-container" style="margin-top: 20px;"> 
             <p class="email-text">Feel free to reach out by email!</p>
-            <p id="email" class="email-address" style="color: #0080FF;"> youssefabdulle12@gmail.com</p>
+            <p id="email" class="email-address" style="color: #0080FF;">youssefabdulle12@gmail.com</p>
             <i class="fas fa-copy" id="copy-email-icon" title="Copy Email"></i>
-            <div id="copied" class="hidden" >Copied!</div>
+            <div id="copied" class="hidden">Copied!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="experience-section" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtext">Here are some of the experiences that have shaped my skills and growth as a software engineer</p>
+      <!-- Experience Timeline -->
+      <div class="timeline-section">
+
+        <!-- SWE Intern at Atlassian -->
+        <div class="timeline-item">
+          <div class="timeline-bar"></div> <!-- Left Timeline Bar -->
+          <div class="timeline-content">
+            <div class="timeline-image">
+              <img src="./assets/atl.png" alt="Atlassian Logo">
+            </div>
+            <div class="timeline-text">
+              <h3 class="timeline-title">Software Engineer Intern</h3>
+              <p class="timeline-company">Atlassian</p>
+              <p class="timeline-date">Incoming Summer 2025</p>
+              <ul class="timeline-description">
+                <li>Incoming Summer 2025</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Undergraduate TA at UMN -->
+        <div class="timeline-item">
+          <div class="timeline-bar"></div> <!-- Left Timeline Bar -->
+          <div class="timeline-content">
+            <div class="timeline-image">
+              <img src="./assets/mn.png" alt="UMN Logo">
+            </div>
+            <div class="timeline-text">
+              <h3 class="timeline-title">Undergraduate TA</h3>
+              <p class="timeline-company">University of Minnesota</p>
+              <p class="timeline-date"> Sept 2025 - Present</p>
+              <ul class="timeline-description">
+                <li> CSCI 1133 </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -139,10 +184,11 @@
         <!-- Other Tools Card -->
       </section>
 
+
     <section class="project-section" id="projects">
       <div id="image-overlay" onclick="closeImage()" style="display:none;"></div>
-      <h2 class="section-title" style="margin-bottom: 1rem">Projects</h2>
-      <p class="section-subtext" style="margin-bottom: 3rem;">Here are some personal projects I've worked on to expand my knowledge and automate everyday tasks!</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtext">Here are some personal projects I've worked on to expand my knowledge and automate everyday tasks!</p>      
       
       <div class="project-container">
         <!-- HeadStart AI Project -->
@@ -212,7 +258,7 @@
         <div class="project-card">
           <img src="./assets/food.jpg" alt="Recipe Website" class="project-image" onclick="enlargeImage(this)">
           <div class="project-info">
-            <p class="project-title">Recipe Recommender </p>
+            <p class="project-title">Recipe Suggestor </p>
             <p class="project-subtitle">
               Developing a full stack recipe website using Node.js, JavaScript, and React.js,
                featuring a sleek interface for browsing and searching recipes. 
@@ -266,11 +312,12 @@
           <div class="footer-title">Youssef Abdulle</div>
           <div class="footer-nav">
               <ul>
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#contact">Contact</a></li>
-              </ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li> <!-- Experience second -->
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
           <div class="footer-social">
               <a href="https://github.com/yabdlle" class="footer-icon" target="_blank"><i class="fab fa-github"></i></a>

@@ -22,23 +22,10 @@ body {
   margin: 0;
 }
 
-
 p {
   color: white;
 }
-.wave-emoji {
-  display: inline-block;
-  animation: wave 1s infinite; /* Adjust duration as needed */
-}
 
-@keyframes wave {
-  0%, 100% {
-      transform: rotate(0deg);
-  }
-  50% {
-      transform: rotate(20deg);
-  }
-}
 
 /* Transition */
 a, .btn {
@@ -387,6 +374,7 @@ section {
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); 
 }
+
 .about-text {
   text-align: center;
   font-size: 1rem;
@@ -405,11 +393,12 @@ section {
 }
 /* Skills Section */
 .skills-section {
-    padding: 4rem 1rem; 
-    margin-bottom: 3rem; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 4rem 1rem; 
+  margin-top: -3rem;  /* Adjust this value to move it higher */
+  margin-bottom: 3rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-subtext {
@@ -491,16 +480,118 @@ section {
   margin-bottom: 3rem; 
 }
 .section-title {
-  margin-bottom: var(--mb-4); /* Margin bottom */
+  margin-bottom: 1rem;
   font-size: 42px; 
   text-align: center; /* Center align the section title */
   color: #0080FF;
 }
 
 .section-subtext {
+  margin-bottom: 2rem;
   text-align: center; /* Center align the subtext */
   font-size: 1.25rem; /* Larger font size for readability */
 }
+
+/* Experience Section */
+.experience-section {
+  padding: 4rem 1rem;
+  background-color: #0A0A0A; /* Black background */
+}
+
+/* Timeline Section */
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between each timeline item */
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Timeline Item */
+.timeline-item {
+  display: flex;
+  position: relative;
+  padding: 2rem;
+  background-color: #000;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+}
+
+/* Timeline Bar */
+.timeline-bar {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: #0080FF; /* Blue timeline bar */
+  border-radius: 3px;
+}
+
+/* Timeline Content */
+.timeline-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.timeline-image {
+  width: 70px; /* Adjust width of the image */
+  height: 70px; /* Adjust height of the image */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.timeline-image img {
+  width: 100%; /* Ensure the image fits inside the div */
+  height: 100%;
+  object-fit: contain;
+}
+
+.timeline-text {
+  flex: 1; /* Ensures that the text content takes the remaining space */
+}
+
+.timeline-title {
+  font-size: 22px;
+  color: #0080FF;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.timeline-company {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.timeline-date {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.timeline-description {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.timeline-description li {
+  margin-bottom: 8px;
+}
+
+
 
 
 .project-container {
