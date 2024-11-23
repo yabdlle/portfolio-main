@@ -405,10 +405,11 @@ section {
 }
 /* Skills Section */
 .skills-section {
+    padding: 4rem 1rem; 
+    margin-bottom: 3rem; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0;
 }
 
 .skills-subtext {
@@ -481,7 +482,7 @@ section {
 /* Skills Section */
 .skills-section {
   padding: 4rem 1rem; 
-  margin-bottom: 2rem; 
+  margin-bottom: 3rem; 
 }
 .section-title {
   margin-bottom: var(--mb-4); /* Margin bottom */
