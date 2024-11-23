@@ -461,7 +461,6 @@ section {
 .skill-icon, .skills-icon {
   width: 2rem;
   font-size: 2rem;
-  color: var(--first-color);
   display: block;
   margin: 0 auto; /* Centers the icon horizontally */
 }
