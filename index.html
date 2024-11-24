@@ -281,14 +281,22 @@
     <section class="contact-section" id="contact">
       <div class="contact-container">
         <h3 class="section-title">Connect with Me!</h3>
-        <p style="margin-bottom: 30px;" class="section-subtext">Feel free to reach out for any questions, opportunities, or just to have a coffee chat!</p>
+        <p class="section-subtext" style="margin-bottom: 30px;">
+          Feel free to reach out using the form, or contact me at 
+          <span id="contact-email" class="email-address" style="color: #0080FF; cursor: pointer;" title="Click to copy email">
+            youssefabdulle12@gmail.com
+          </span>
+        </p>
+        
+
+        <!-- Contact form -->
         <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
           <div class="form-container">
             <input type="hidden" name="access_key" value="6c0c1fc1-7711-46aa-94c6-b955a86ec63d">
             <input type="text" id="name" name="name" required class="form-input" placeholder="Your Name">
           </div>
           <div class="form-container">
-            <input type="email" id="email" name="email" required class="form-input" placeholder="Your Email">
+            <input type="email" id="email-input" name="email" required class="form-input" placeholder="Your Email">
           </div>
           <div class="form-container">
             <input type="text" id="subject" name="subject" required class="form-input" placeholder="Your Subject">
@@ -297,11 +305,12 @@
             <textarea id="message" name="message" rows="5" required class="form-textarea" placeholder="Your Message"></textarea>
           </div>
           <button type="submit" class="submit-btn">
-            <i class="fa fa-paper-plane" aria-hidden="true"></i>  Send
+            <i class="fa fa-paper-plane" aria-hidden="true"></i> Send
           </button>
         </form>
       </div>
     </section>
+    
     
 
     <footer class="footer-class">
