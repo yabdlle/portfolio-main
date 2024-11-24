@@ -448,7 +448,10 @@ section {
   font-size: 1.5rem;
   color: #0080FF;
   margin-bottom: 1.5rem;
+  word-break: break-word;
+  white-space: normal; 
 }
+
 
 .skills-card-content {
   display: flex;
@@ -534,12 +537,15 @@ section {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 24px; 
+  font-size: clamp(1.2rem, 5vw, 2rem);
   font-weight: bold;
   text-align: center; 
   margin: 0;
   color: #0080FF; 
+  max-width: 100%; 
+  word-break: break-word;
 }
+
 
 .project-subtitle {
   margin: 1rem 0; 

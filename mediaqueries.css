@@ -46,24 +46,12 @@
 
 /* Responsive adjustments for tablets */
 @media (max-width: 768px) {
-
   .skills-data {
-    flex: 1 1 calc(50% - 1rem); /* Two items per row on tablets */
-    max-width: calc(50% - 1rem);
+    flex: 1 1 100%; /* One item per row on tablets */
+    max-width: 100%; /* Ensures each item takes up the full width */
   }
 }
 
-@media (max-width: 768px) {
-  .skills-cards-container {
-      flex-direction: column; /* Stack cards vertically */
-      gap: 10px; /* Adjust spacing between cards */
-  }
-
-  .skills-card {
-      flex: 1 1 100%; /* Each card takes full width of the container */
-      box-sizing: border-box;
-  }
-}
 
 /* Responsive adjustments for mobile screens */
 @media (max-width: 480px) {
