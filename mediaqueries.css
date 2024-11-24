@@ -3,14 +3,13 @@
   #desktop-nav {
     display: none;
   }
-  
 
   .logo {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .socials-container {
     display: flex; /* Show social icons */
     flex-direction: column; /* Stack icons vertically */
@@ -22,7 +21,7 @@
   .social-icon {
     margin: 0.5rem 0; /* Space between social icons */
   }
-  
+
   .social-icon i {
     color: #0080FF; /* Ensure the icons are white */
     cursor: pointer;
@@ -35,45 +34,37 @@
   }
 
   .skills-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: initial;
   }
+
   .fullscreen-image {
     max-width: 80%; /* Increase size on mobile */
     max-height: 80%; /* Increase size on mobile */
   }
 }
 
-/* Responsive adjustments for tablets */
-@media (max-width: 768px) {
-  .skills-data {
-    flex: 1 1 100%; /* One item per row on tablets */
-    max-width: 100%; /* Ensures each item takes up the full width */
-  }
-}
-
-
-/* Responsive adjustments for mobile screens */
+/* For mobile screens (less than 480px), only one section still visible */
 @media (max-width: 480px) {
-  .skills-data {
-    flex: 1 1 calc(100% - 1rem); /* One item per row on mobile */
-    max-width: calc(100% - 1rem);
+  #programming-languages-card {
+    display: block; /* Show this card */
   }
-  @media (max-width: 700px){
-    .footerNav ul{
-        flex-direction: column;
-    } 
-    .footerNav ul li{
-        width:100%;
-        text-align: center;
-        margin: 10px;
-    }
-    .socialIcons a{
-        padding: 8px;
-        margin: 4px;
-    }
+
+  #technologies-frameworks-card {
+    display: none; /* Hide the other card */
+  }
 }
 
+/* Add an option to toggle between the sections if needed */
+.toggle-button {
+  cursor: pointer;
+  color: #0080FF;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+/* For screens up to 768px */
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem; /* Smaller font size for mobile */
@@ -90,12 +81,13 @@
   .project-img {
     height: auto; /* Allow cards to grow with content */
   }
-  
+
   .project-title {
     font-size: 1.25rem; /* Smaller font size for mobile */
   }
 
-  .project-description, .project-languages {
+  .project-description,
+  .project-languages {
     font-size: 0.9rem; /* Smaller font size for mobile */
     margin: 0 0.5rem; /* Less margin for mobile */
   }
@@ -107,44 +99,36 @@
   .github-link i {
     font-size: 1.2rem; /* Smaller icon size for mobile */
   }
-  .project-description{
+
+  .project-description {
     padding-bottom: 2rem;
   }
-}
-@media (max-width: 768px) {
+
+  /* Skills cards container adjustments */
+  .skills-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping, both cards stay horizontally */
+    gap: 2rem; /* Adjust spacing between cards */
+  }
+
+  #programming-languages-card,
+  #technologies-frameworks-card {
+    display: block; /* Ensure both cards are visible */
+    flex: 1 1 48%; /* Allow each card to take up about half the width */
+  }
+
+  /* Show toggle button */
+  .toggle-button {
+    display: block;
+  }
+
+  /* Adjust section title and subtext */
   .section-title {
     font-size: 2rem;
   }
 
   .section-subtext {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
-
-  .project-container {
-    grid-template-columns: 1fr; 
-  }
-
-  .project-img {
-    height: auto; /* Allow cards to grow with content */
-  }
-  
-  .project-title {
-    color: #0080FF;
-    font-size: 2rem; /* Smaller font size for mobile */
-  }
-
-  .project-description, .project-languages {
-    font-size: 0.9rem; /* Smaller font size for mobile */
-    margin: 0 0.5rem; /* Less margin for mobile */
-  }
-
-  .github-link {
-    font-size: 1rem; /* Smaller font size for mobile */
-  }
-
-  .github-link i {
-    font-size: 1.2rem; /* Smaller icon size for mobile */
-  }
-  
-}
 }
