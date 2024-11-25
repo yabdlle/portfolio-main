@@ -45,14 +45,22 @@
   }
 }
 
-/* For mobile screens (less than 480px), only one section still visible */
+/* For mobile screens (less than 480px) */
 @media (max-width: 480px) {
-  #programming-languages-card {
-    display: block; /* Show this card */
+  /* Change the 'Programming Languages' to 'Languages' */
+  .programming-languages-title::before {
+    content: 'Languages'; /* Set the new title for mobile */
   }
 
-  #technologies-frameworks-card {
-    display: none; /* Hide the other card */
+  /* Change the 'Tools and Frameworks' to 'Frameworks' */
+  .tools-and-frameworks-title::before {
+    content: 'Frameworks'; /* Set the new title for mobile */
+  }
+
+  /* Hide the original text */
+  .programming-languages-title,
+  .tools-and-frameworks-title {
+    visibility: hidden;
   }
 }
 
@@ -107,9 +115,10 @@
   /* Skills cards container adjustments */
   .skills-cards-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; /* Prevent wrapping, both cards stay horizontally */
+    flex-direction: row; /* Ensure the cards are horizontally aligned */
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
     gap: 2rem; /* Adjust spacing between cards */
+    justify-content: center; /* Center the cards horizontally */
   }
 
   #programming-languages-card,

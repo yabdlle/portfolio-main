@@ -895,3 +895,24 @@ section {
 .highlight-email {
   background-color: #0A0A0A;
 }
+#contact-copy-icon {
+  cursor: pointer; 
+  font-size: 1.2rem; /* Icon size */
+  color: #0080FF; /* Matches email icon color */
+  margin-left: 10px; /* Adds spacing between email and icon */
+}
+
+#contact-copied {
+  display: none; 
+  color: white; /* "Copied!" message color matching icon */
+  font-weight: bold;
+  margin-left: 10px; /* Consistent spacing */
+}
+
+#contact-copied.active {
+  display: inline; /* Shows the "Copied!" message when active */
+}
+
+.highlight-email {
+  background-color: #0A0A0A; /* Consistent with the background highlight */
+}

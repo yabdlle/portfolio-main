@@ -85,6 +85,38 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const contactEmail = document.getElementById('contact-email');
+  const contactCopyIcon = document.getElementById('contact-copy-icon');
+  const contactCopiedMessage = document.getElementById('contact-copied');
+
+  // Highlight email and icon on mouseover
+  contactCopyIcon.addEventListener('mouseover', () => {
+      contactEmail.style.textDecoration = 'underline';
+  });
+
+  // Remove highlight on mouseout
+  contactCopyIcon.addEventListener('mouseout', () => {
+      contactEmail.style.textDecoration = 'none';
+  });
+
+  // Copy email functionality
+  contactCopyIcon.addEventListener('click', () => {
+      navigator.clipboard.writeText(contactEmail.textContent).then(() => {
+          contactCopiedMessage.textContent = 'Copied!';
+          contactCopiedMessage.classList.add('active');
+
+          // Remove the "Copied!" message after 2 seconds
+          setTimeout(() => {
+              contactCopiedMessage.classList.remove('active');
+              contactCopiedMessage.textContent = '';
+          }, 2000);
+      }).catch(err => {
+          console.error('Failed to copy text: ', err);
+      });
+  });
+});
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: "top",
