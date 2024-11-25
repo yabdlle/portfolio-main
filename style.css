@@ -897,22 +897,22 @@ section {
 }
 #contact-copy-icon {
   cursor: pointer; 
-  font-size: 1.2rem; /* Icon size */
-  color: #0080FF; /* Matches email icon color */
-  margin-left: 10px; /* Adds spacing between email and icon */
+  font-size: 1.2rem; 
+  color: #0080FF;
+  margin-left: 10px; 
 }
 
 #contact-copied {
   display: none; 
-  color: white; /* "Copied!" message color matching icon */
+  color: white; 
   font-weight: bold;
-  margin-left: 10px; /* Consistent spacing */
+  margin-left: 10px; 
 }
 
 #contact-copied.active {
-  display: inline; /* Shows the "Copied!" message when active */
+  display: inline; 
 }
 
 .highlight-email {
-  background-color: #0A0A0A; /* Consistent with the background highlight */
+  background-color: #0A0A0A; 
 }
