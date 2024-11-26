@@ -884,7 +884,6 @@ section {
 #copied {
   display: none; 
   color: white;
-  font-weight: bold;
   margin-left: 10px;
 }
 
@@ -905,7 +904,6 @@ section {
 #contact-copied {
   display: none; 
   color: white; 
-  font-weight: bold;
   margin-left: 10px; 
 }
 
