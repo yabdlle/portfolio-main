@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+
 document.addEventListener('DOMContentLoaded', () => {
   const contactEmail = document.getElementById('contact-email');
   const contactCopyIcon = document.getElementById('contact-copy-icon');
